@@ -7,13 +7,19 @@ const iaRoutes = require("./BACK/ROUTES/ia_routes");
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+  origin: "https://academiadiasfit.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
+app.use(express.json());
 
 app.use("/usuarios", usuariosRoutes);
 app.use("/ia", iaRoutes);
 
-app.listen(3000, () => {
-    console.log("Servidor rodando em https://repositorio-academia-novo.onrender.com");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log("Servidor rodando na porta " + PORT);
 });
