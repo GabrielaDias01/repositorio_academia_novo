@@ -7,11 +7,7 @@ const iaRoutes = require("./BACK/ROUTES/ia_routes");
 
 const app = express();
 
-app.use(cors({
-  origin: "https://academiadiasfit.netlify.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
+app.use(cors());
 
 app.use(express.json());
 
