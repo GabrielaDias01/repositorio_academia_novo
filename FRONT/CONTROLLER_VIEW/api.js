@@ -1,4 +1,6 @@
+const baseUrl = "https://repositorio-academia-novo.onrender.com/"
+
 function obterUsuarios(){
-    return fetch("http://localhost:3000/usuarios")
+    return fetch(`${baseUrl}usuarios`)
         .then(res => res.json());
 }

@@ -2,7 +2,7 @@ const token = localStorage.getItem("token");
 const usuario = JSON.parse(localStorage.getItem("usuario"));
 
 if (!token || !usuario) {
-    window.location.href = "login.html";
+    window.location.href = "../../login.html";
 }
 
 document.querySelector("#nome").textContent = usuario.nome;

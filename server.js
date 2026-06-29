@@ -15,5 +15,5 @@ app.use("/usuarios", usuariosRoutes);
 app.use("/ia", iaRoutes);
 
 app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000");
+    console.log("Servidor rodando em https://repositorio-academia-novo.onrender.com");
 });

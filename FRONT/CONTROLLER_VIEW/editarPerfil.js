@@ -47,7 +47,7 @@ document
         try {
 
             // ALTERE ESTA URL PARA A SUA ROTA
-            const resposta = await fetch(`http://localhost:3000/usuarios/${id}`, {
+            const resposta = await fetch(`https://repositorio-academia-novo.onrender.com/usuarios/${id}`, {
 
                 method: "PUT",
 

@@ -45,7 +45,7 @@ btnSalvar.addEventListener("click", function () {
         senha
     };
 
-    fetch(`http://localhost:3000/usuarios/${id}`, {
+    fetch(`https://repositorio-academia-novo.onrender.com/usuarios/${id}`, {
 
         method: "PUT",
 

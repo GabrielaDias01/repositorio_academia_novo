@@ -11,7 +11,7 @@ btnSalvarUsuario.addEventListener("click", function (event) {
 
     var usuario = obtemUsuarioDoFormulario(frmUsuario);
 
-    fetch("http://localhost:3000/usuarios", {
+    fetch("https://repositorio-academia-novo.onrender.com/usuarios", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -5,7 +5,7 @@ document.getElementById("formLogin").addEventListener("submit", async function (
     const senha = document.getElementById("senha").value;
 
 
-    const resposta = await fetch("http://localhost:3000/usuarios/login", {
+    const resposta = await fetch("https://repositorio-academia-novo.onrender.com/usuarios/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

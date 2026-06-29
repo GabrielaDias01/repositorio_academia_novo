@@ -84,7 +84,7 @@ async function gerarTreino() {
         content: ResultadoTreino
     })
 
-    let resposta = await fetch("http://localhost:3000/ia/chat", {
+    let resposta = await fetch("https://repositorio-academia-novo.onrender.com/ia/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -175,7 +175,7 @@ async function enviarMensagemChat() {
     try {
 
         let resposta = await fetch(
-            "http://localhost:3000/ia/chat",
+            "https://repositorio-academia-novo.onrender.com/ia/chat",
             {
                 method: "POST",
                 headers: {

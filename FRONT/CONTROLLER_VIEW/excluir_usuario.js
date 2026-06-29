@@ -13,7 +13,7 @@ tabela.addEventListener("click", function (event) {
 
         var idUsuario = linha.dataset.id;
 
-        fetch(`http://localhost:3000/usuarios/${idUsuario}`, {
+        fetch(`https://repositorio-academia-novo.onrender.com/usuarios/${idUsuario}`, {
             method: "DELETE"
         })
         .then(response => response.json())
