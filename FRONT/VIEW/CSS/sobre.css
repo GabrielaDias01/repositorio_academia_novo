@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#sobre{
+    background-color: #000;
+    color: #fff;
+
+    padding: 120px 8%;
+}
+
+#sobre h2{
+    text-align: center;
+
+    font-size: 4rem;
+
+    color: white;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo-sobre{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-bottom: 80px;
+}
+
+.conteudo-sobre img{
+    width: 50%;
+
+    max-width: 600px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(255, 0, 0, .3);
+}
+
+.texto-sobre{
+    flex: 1;
+
+    max-width: 600px;
+}
+
+.texto-sobre p{
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    color: #d9d9d9;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+/* CARDS */
+
+.cards-sobre{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card-sobre{
+    background: #111;
+
+    border: 2px solid #ff0000;
+
+    border-radius: 15px;
+
+    padding: 25px 35px;
+
+    min-width: 180px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.card-sobre:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 20px rgba(255, 0, 0, .4);
+}
+
+.card-sobre h3{
+    color: #ff0000;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+.card-sobre p{
+    color: white;
+}
+
+/* TABLET */
+
+@media(max-width: 992px){
+
+    .conteudo-sobre{
+        flex-direction: column;
+    }
+
+    .conteudo-sobre img{
+        width: 100%;
+    }
+
+    .texto-sobre{
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .texto-sobre p{
+        text-align: center;
+    }
+
+    #sobre h2{
+        font-size: 3rem;
+    }
+}
+
+/* CELULAR */
+
+@media(max-width: 768px){
+
+    #sobre{
+        padding: 70px 5%;
+    }
+
+    #sobre h2{
+        font-size: 2.5rem;
+    }
+
+    .texto-sobre p{
+        font-size: 1rem;
+    }
+
+    .card-sobre{
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* CELULAR PEQUENO */
+
+@media(max-width: 480px){
+
+    #sobre h2{
+        font-size: 2rem;
+    }
+
+    .card-sobre h3{
+        font-size: 1.5rem;
+    }
+}

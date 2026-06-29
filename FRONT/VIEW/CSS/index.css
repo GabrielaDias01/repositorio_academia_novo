@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #e4e4e7;
+    font-family: 'Inter', sans-serif;
+
+}
+main{
+    padding-top: 80px;
+}
+.section {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ 
+}
+
+
+.nav {
+    width: 92%;
+}
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.nav a {
+    display: flex;
+    justify-content:end;
+    text-decoration: none;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+.icone {
+    width: 5%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-icone {
+    background-color: #dc2626;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-icone img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+
+.btn-icone:hover {
+    background-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+
+.carrossel{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.ativo{
+    opacity: 1;
+}
+
+.texto-carrossel{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+
+    transform: translateY(-50%);
+
+    color: white;
+    z-index: 10;
+}
+
+.texto-carrossel h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.texto-carrossel p{
+    font-size: 1.3rem;
+}
+
+.menu-hamburguer {
+    display: none;
+
+    position: fixed;
+
+    top: 15px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    background: rgba(220, 38, 38, 0.15);
+    border: 2px solid #dc2626;
+    border-radius: 12px;
+
+    color: #ef4444;
+    font-size: 1.8rem;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+
+    z-index: 10000;
+}
+
+.menu-hamburguer:hover {
+    background: #dc2626;
+
+    color: white;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px rgba(220, 38, 38, 0.7),
+        0 0 30px rgba(220, 38, 38, 0.4);
+}
+
+@media (max-width: 768px){
+
+    .menu-hamburguer{
+        display: flex;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav.ativo{
+        display: block;
+
+        position: fixed;
+
+        top: 80px;
+        right: 0;
+
+        width: 280px;
+        height: calc(100vh - 80px);
+
+        background: rgba(15, 15, 15, 0.98);
+
+        backdrop-filter: blur(10px);
+
+        border-left: 2px solid #dc2626;
+
+        box-shadow:
+            -10px 0 30px rgba(220, 38, 38, 0.15);
+
+        z-index: 999;
+    }
+
+    .nav.ativo ul{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 30px 0;
+    }
+
+    .nav.ativo a{
+        width: 90%;
+        text-align: center;
+
+        border: 1px solid rgba(220, 38, 38, 0.2);
+    }
+
+   .icone {
+        display: flex;
+        position: fixed;
+        top: 17px;
+        right: 85px;
+        /* fica ao lado do menu */
+        width: 45px;
+        height: 45px;
+        z-index: 10001;
+    }
+
+    .btn-icone {
+        width: 45px;
+        height: 45px;
+        padding: 0;
+    }
+
+    .btn-icone img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+}
+
+
+.divisor {
+    width: 100;
+    height: 4px;
+
+    margin: 80px auto #000;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #dc2626,
+        #ef4444,
+        #dc2626,
+        transparent
+    );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 0 10px rgba(220, 38, 38, 0.5),
+        0 0 20px rgba(220, 38, 38, 0.3);
+}
+

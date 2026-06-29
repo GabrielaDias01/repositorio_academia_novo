@@ -1,0 +1,95 @@
+footer{
+    margin-top:80px;
+    background:#111;
+    border-top:2px solid #ff0000;
+}
+
+.footer-container{
+    padding:60px 8%;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    flex:1;
+    min-width:250px;
+}
+
+.footer-box h3{
+    color:#ff0000;
+    font-size:1.8rem;
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.footer-box span{
+    display:block;
+    margin-bottom:20px;
+    color:#ccc;
+}
+
+.footer-copy{
+    border-top:1px solid #222;
+    text-align:center;
+    padding:20px;
+    color:#999;
+}
+
+@media(max-width:768px){
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-box{
+        min-width:100%;
+    }
+
+}
+
+/* ÍCONES */
+.footer-box i {
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+/* REDES SOCIAIS */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a i {
+    color: #ff0000;
+    font-size: 1.2rem;
+}
+
+/* efeito hover estilo academia */
+.social-icons a:hover {
+    transform: translateX(6px);
+    color: #ff0000;
+}
+
+/* melhora mobile (opcional leve) */
+@media(max-width:768px){
+    .social-icons {
+        align-items: center;
+    }
+}
