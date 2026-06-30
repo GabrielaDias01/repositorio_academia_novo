@@ -22,5 +22,5 @@ if (usuario.perfil === "administrador") {
 
 document.querySelector("#btnSair").addEventListener("click", () => {
     localStorage.clear();
-    window.location.href = "./FRONT/VIEW/HTML/login.html";
+    window.location.href = "FRONT/VIEW/HTML/login.html";
 });
