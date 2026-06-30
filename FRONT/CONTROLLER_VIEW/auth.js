@@ -12,8 +12,6 @@ if (!usuarioLogado) {
 document.querySelector("#btnSair").addEventListener("click", () => {
 
     localStorage.clear();
-
-    window.location.href = "./FRONT/VIEW/HTML/login.html";
 });
 
 
