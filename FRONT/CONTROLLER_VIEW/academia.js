@@ -5,8 +5,6 @@ function detectarTipoPesquisa(texto) {
 
     texto = texto.toLowerCase()
 
-    /* RECEITA */
-
     if (
         texto.includes("receita") ||
         texto.includes("comida") ||

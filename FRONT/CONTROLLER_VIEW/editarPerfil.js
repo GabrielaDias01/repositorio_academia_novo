@@ -5,7 +5,6 @@ if (!token || !usuario) {
     window.location.href = "login.html";
 }
 
-// Preenche os campos
 document.getElementById("idUsuario").value = usuario.id;
 document.getElementById("txtNomeAlterar").value = usuario.nome;
 document.getElementById("txtEmailAlterar").value = usuario.email;
@@ -46,7 +45,6 @@ document
 
         try {
 
-            // ALTERE ESTA URL PARA A SUA ROTA
             const resposta = await fetch(`https://repositorio-academia-novo.onrender.com/usuarios/${id}`, {
 
                 method: "PUT",

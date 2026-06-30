@@ -29,6 +29,5 @@ function listarUsuarios() {
 }
 
 btnConsultar.addEventListener("click", function () {
-    console.log("Botão clicado");
     listarUsuarios();
 });
