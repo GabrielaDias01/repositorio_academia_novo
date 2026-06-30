@@ -16,8 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="../../CONTROLLER_VIEW/editarPerfil.js" defer></script>
     <script src="../JS/index.js" defer></script>
@@ -26,117 +25,105 @@
 
 <body>
 
-<header>
+    <header>
 
-    <section class="section">
+        <section class="section">
 
-        <div class="logo">
-            <img src="./logo.png" width="220">
-        </div>
-
-        <nav class="nav">
-
-            <ul>
-
-                <li><a href="../../../index.html">HOME</a></li>
-                <li><a href="../../../index.html">SOBRE</a></li>
-                <li><a href="../../../index.html">PLANOS</a></li>
-                <li><a href="../../../index.html">CONTATOS</a></li>
-                <li><a href="./iaTreino.html">TREINO IA</a></li>
-                <li><a href="./iaPesquisa.html">IA IMAGEM</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-hamburguer" id="menuHamburguer">
-            ☰
-        </div>
-
-    </section>
-
-</header>
-
-<main>
-
-    <section class="card-perfil">
-
-        <h1>
-            <i class="fa-solid fa-user-pen"></i>
-            Editar Perfil
-        </h1>
-
-        <form id="frmEditarPerfil">
-
-            <input type="hidden" id="idUsuario">
-
-            <div class="input-box">
-
-                <label>Nome</label>
-
-                <input
-                    type="text"
-                    id="txtNomeAlterar"
-                    placeholder="Digite seu nome">
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Email</label>
-
-                <input
-                    type="email"
-                    id="txtEmailAlterar"
-                    placeholder="Digite seu email">
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Nova senha</label>
-
-                <input
-                    type="password"
-                    id="txtSenhaAlterar"
-                    placeholder="Digite uma nova senha">
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Confirmar senha</label>
-
-                <input
-                    type="password"
-                    id="txtConfirmarSenhaAlterar"
-                    placeholder="Confirme a senha">
-
-            </div>
-
-            <div class="botoes">
-
-                <a href="./perfil.html" class="btn cancelar">
-
-                    Cancelar
-
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="logo.png" alt="Logo da academia" width="300" height="200">
                 </a>
-
-                <button
-                    type="submit"
-                    id="btnSalvarAlteracao">
-
-                    Salvar Alterações
-
-                </button>
-
             </div>
 
-        </form>
+            <nav class="nav">
 
-    </section>
+                <ul>
 
-</main>
+                    <li><a href="../../../index.html">HOME</a></li>
+                    <li><a href="../../../index.html">SOBRE</a></li>
+                    <li><a href="../../../index.html">PLANOS</a></li>
+                    <li><a href="../../../index.html">CONTATOS</a></li>
+                    <li><a href="./iaTreino.html">TREINO IA</a></li>
+                    <li><a href="./iaPesquisa.html">IA IMAGEM</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="menu-hamburguer" id="menuHamburguer">
+                ☰
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="card-perfil">
+
+            <h1>
+                <i class="fa-solid fa-user-pen"></i>
+                Editar Perfil
+            </h1>
+
+            <form id="frmEditarPerfil">
+
+                <input type="hidden" id="idUsuario">
+
+                <div class="input-box">
+
+                    <label>Nome</label>
+
+                    <input type="text" id="txtNomeAlterar" placeholder="Digite seu nome">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input type="email" id="txtEmailAlterar" placeholder="Digite seu email">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Nova senha</label>
+
+                    <input type="password" id="txtSenhaAlterar" placeholder="Digite uma nova senha">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Confirmar senha</label>
+
+                    <input type="password" id="txtConfirmarSenhaAlterar" placeholder="Confirme a senha">
+
+                </div>
+
+                <div class="botoes">
+
+                    <a href="./perfil.html" class="btn cancelar">
+
+                        Cancelar
+
+                    </a>
+
+                    <button type="submit" id="btnSalvarAlteracao">
+
+                        Salvar Alterações
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
 
 </body>
 
